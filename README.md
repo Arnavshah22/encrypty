@@ -23,7 +23,8 @@ This project is still in its early stages. Many features may be incomplete or su
 
 1. Clone the repository:
 2. Navigate to the project directory:
-   ## Contributing
+   
+ ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
