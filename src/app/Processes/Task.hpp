@@ -23,7 +23,7 @@ struct Task
 
     std::string toString(){
         std::ostringstream oss;
-        oss<<filepath<<","<<(action==Action.ENCRYPT?"ENCRYPT":"DECRYPT");
+        oss<<filepath<<","<<(action==Action::ENCRYPT?"ENCRYPT":"DECRYPT");
         //test.txt  ENCRYPT  f_stream
         //"test.txt"
         return oss.str();
