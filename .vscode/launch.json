@@ -3,21 +3,34 @@
     "configurations": [
         {
             "name": "Debug encrypt_decrypt",
-            "type": "lldb",
+            "type": "gdb",
             "request": "launch",
             "program": "${workspaceFolder}/encrypt_decrypt",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build"
         },
         {
             "name": "Debug cryption (standalone)",
-            "type": "lldb",
+            "type": "gdb",
             "request": "launch",
             "program": "${workspaceFolder}/cryption",
-            "args": ["your_task_data_here"],
+            "args": [
+                "your_task_data_here"
+            ],
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal"
         }
     ]
 }
